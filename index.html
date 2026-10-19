@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WishSponsor on Mobile</title>
+<meta name="description" content="Every page of wishsponsor.com, shown on a phone.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+  :root { --ink:#1E1442; --brand:#321877; --muted:#4A4266; --soft:#5D5480; --bg:#F1EEFB; --line:#DCD4F3; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font-family: 'Inter', system-ui, sans-serif; }
+  header { max-width: 1360px; margin: 0 auto; padding: 4rem 1.5rem 3rem; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 1rem; }
+  .eyebrow { font-size: .85rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: #6B4FC4; }
+  h1 { margin: 0; font-size: clamp(2.4rem, 5vw, 4rem); font-weight: 800; letter-spacing: -.03em; line-height: 1.05; color: var(--brand); }
+  header p { margin: 0; max-width: 620px; font-size: 1.1rem; line-height: 1.6; color: var(--muted); }
+  .chips { display: flex; flex-wrap: wrap; justify-content: center; gap: .5rem; margin-top: .5rem; }
+  .chips span { background: #fff; border: 1px solid var(--line); border-radius: 999px; padding: .45rem .9rem; font-size: .9rem; color: var(--muted); }
+  main { max-width: 1400px; margin: 0 auto; padding: 0 1.5rem 6rem; display: flex; flex-wrap: wrap; justify-content: center; gap: 4.5rem 3.5rem; }
+  figure { margin: 0; display: flex; flex-direction: column; align-items: center; gap: 1.25rem; }
+  .phone { width: 399px; height: 836px; padding: 12px; border-radius: 56px; background: #15102B; box-shadow: 0 40px 80px -30px rgba(50,24,119,.45), inset 0 0 0 2px #2E2650; }
+  .screen { width: 375px; height: 812px; border-radius: 44px; overflow-y: auto; overflow-x: hidden; background: #fff; scrollbar-width: none; }
+  .screen::-webkit-scrollbar { display: none; }
+  .screen img { display: block; width: 375px; height: auto; }
+  figcaption { display: flex; flex-direction: column; align-items: center; gap: .3rem; }
+  figcaption strong { font-size: 1.15rem; color: var(--brand); }
+  figcaption span { font-size: .95rem; color: var(--soft); }
+  @media (max-width: 440px) {
+    .phone { transform: scale(.82); transform-origin: top center; margin-bottom: -150px; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="eyebrow">wishsponsor.com</div>
+  <h1>Every page, on mobile</h1>
+  <p>Each phone shows the full live page at iPhone width. Scroll inside a phone to read the whole page, top to footer.</p>
+  <div class="chips"><span>10 screens</span><span>375 px wide</span><span>Captured 19 Oct 2026</span></div>
+</header>
+<main>
+  <figure><div class="phone"><div class="screen"><img src="home.jpg" alt="WishSponsor Home page on a phone" loading="lazy"></div></div><figcaption><strong>Home</strong><span>/</span></figcaption></figure>
+  <figure><div class="phone"><div class="screen"><img src="menu.jpg" alt="WishSponsor menu open on a phone" loading="lazy"></div></div><figcaption><strong>Menu (open)</strong><span>any page, menu tapped</span></figcaption></figure>
+  <figure><div class="phone"><div class="screen"><img src="register.jpg" alt="WishSponsor Sign up page on a phone" loading="lazy"></div></div><figcaption><strong>Sign up</strong><span>/register</span></figcaption></figure>
+  <figure><div class="phone"><div class="screen"><img src="login.jpg" alt="WishSponsor Log in page on a phone" loading="lazy"></div></div><figcaption><strong>Log in</strong><span>/login</span></figcaption></figure>
+  <figure><div class="phone"><div class="screen"><img src="subscription.jpg" alt="WishSponsor+ subscription page on a phone" loading="lazy"></div></div><figcaption><strong>WishSponsor+</strong><span>/wishsponsor-subscription</span></figcaption></figure>
+  <figure><div class="phone"><div class="screen"><img src="about.jpg" alt="WishSponsor About page on a phone" loading="lazy"></div></div><figcaption><strong>About</strong><span>/about</span></figcaption></figure>
+  <figure><div class="phone"><div class="screen"><img src="help.jpg" alt="WishSponsor Help Center page on a phone" loading="lazy"></div></div><figcaption><strong>Help Center</strong><span>/help-center</span></figcaption></figure>
+  <figure><div class="phone"><div class="screen"><img src="terms.jpg" alt="WishSponsor Terms page on a phone" loading="lazy"></div></div><figcaption><strong>Terms &amp; Conditions</strong><span>/terms</span></figcaption></figure>
+  <figure><div class="phone"><div class="screen"><img src="privacy.jpg" alt="WishSponsor Privacy Policy page on a phone" loading="lazy"></div></div><figcaption><strong>Privacy Policy</strong><span>/privacy</span></figcaption></figure>
+  <figure><div class="phone"><div class="screen"><img src="security.jpg" alt="WishSponsor Privacy and Security page on a phone" loading="lazy"></div></div><figcaption><strong>Privacy &amp; Security</strong><span>/security</span></figcaption></figure>
+</main>
+</body>
+</html>
